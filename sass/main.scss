@@ -1,12 +1,7 @@
-$blue: #5265E1;
-$red: #FA5959;
+$primary: #5265E1;
+$secondary: #FA5959;
 $grey: #9c9b9b;
 
-$theme-colors: (
-    primary: $blue,
-    secondary: $red,
-    dark: $grey,
-);
 .text {
     font-size: 12px;
     color: $grey;
@@ -22,7 +17,7 @@ $theme-colors: (
 
 // Variables and Values: Navbar
 $navbar-light-color: $grey;
-$navbar-light-hover-color: $red;
+$navbar-light-hover-color: $secondary;
 
 #collapsibleNavbar {
     justify-content: right;
@@ -39,7 +34,6 @@ $navbar-light-hover-color: $red;
     }
 }
 
-
 // Variables and Values: Buttons
 .btn {
     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
@@ -51,19 +45,19 @@ $navbar-light-hover-color: $red;
 
 .btn-primary {
     &:hover {
-        color: $blue !important;
+        color: $primary !important;
     }
 }
 
 .btn-secondary {
     &:hover {
-        color: $red !important;
+        color: $secondary !important;
     }
 }
 
 .btn-dark {
     &:hover {
-        color: $grey !important;
+        color: #5e5b5b !important;
     }
 }
 .accordion-button {
@@ -102,7 +96,7 @@ $navbar-light-hover-color: $red;
 
 // Variables and values: Contact
 .blue {
-    background-color: $blue;
+    background-color: $primary;
 }
 .contact-text {
     color: white;
