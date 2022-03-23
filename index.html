@@ -9,16 +9,16 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-white btn-sm mx-4 pt-3">
+    <nav class="container navbar navbar-expand-md navbar-light bg-white btn-sm pt-3">
         <a class="navbar-brand" href="#">
             <img src="img/logo-bookmark.svg" alt="bookmark" width="100%">
         </a>
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-extended="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="navbar-collapse collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
+        <div class="navbar-collapse collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
                     <a class="nav-link" href="#">FEATURES</a>
                 </li>
                 <li class="nav-item">
@@ -34,61 +34,88 @@
         </div>
     </nav>
     <header>
-    <section class="header bg-white">
-        <div class="container pt-3 my-2">
-            <div class="row mt-5">
-                <div class="col-lg-6 order-2 order-lg-1">
-                    <h2>A Simple Bookmark<br/>Manager</h2><br/>
-                    <p class="text">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
-                    <p><a href="#" class="btn btn-primary btn-sm">Get it on Chrome</a>
-                        <a href="#" class="btn btn-dark text-white btn-sm">Get it on Firefox</a>
-                    </p>
-                </div>
-                <div class="col-lg-6 order-1 order-lg-2">
-                    <img src="img/illustration-hero.svg" class="img-fluid" alt="landing image">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="container pt-5 my-2">
-            <div class="row">
-                <div class="col-lg-6 col-md-8 mx-auto">
-                    <h4 class="specialTitle">Features<br/></h4>
-                    <p class="specialText">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+        <section class="header bg-white">
+            <div class="container pt-3 my-2">
+                <div class="row mt-5">
+                    <div class="col-sm-6 order-2 order-sm-1">
+                        <h2>A Simple Bookmark<br/>Manager</h2><br/>
+                        <p class="text">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+                        <p><a href="#" class="btn btn-primary btn-sm">Get it on Chrome</a>
+                            <a href="#" class="btn btn-dark text-white btn-sm">Get it on Firefox</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-6 order-1 order-sm-2">
+                        <img src="img/illustration-hero.svg" class="img-fluid" alt="landing image">
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-8 mx-auto">
-                    <ul class="nav nav-pills">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-bs-toggle="pill" href="#">Simple Bookmarking</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="pill" href="#">Speedy Searching</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="pill" href="#">Easy Sharing</a>
-                        </li>
-                    </ul>
+        </section>
+        <section>
+            <div class="container pt-5 my-2">
+                <div class="row justify-content-center">
+                    <div class="col-5">
+                        <h4 class="specialTitle">Features<br/></h4>
+                        <p class="specialText">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section>
-        <div class="container pt-5 my-2">
-            <div class="row mt-4">
-                <div class="col-lg-6 order-2 order-lg-1">
-                    <img src="img/illustration-features-tab-1.svg" class="img-fluid" alt="landing image">
-                </div>
-                <div class="col-lg-6 order-1 order-lg-2">
-                    <h2>Bookmark in one click</h2><br/>
-                    <p class="text">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sales.</p>
-                    <p><a href="#" class="btn btn-primary btn-sm">More info</a></p><br/>
+            <div class="container pt-5 my-2">
+                <div class="row justify-content-center">
+                    <div class="col-7">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-simple-tab" data-bs-toggle="pill" data-bs-target="#pills-simple" type="button" role="tab" aria-controls="pills-simple" aria-selected="true">Simple Bookmarking</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-speedy-tab" data-bs-toggle="pill" data-bs-target="#pills-speedy" type="button" role="tab" aria-controls="pills-speedy" aria-selected="false">Speedy Searching</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-easy-tab" data-bs-toggle="pill" data-bs-target="#pills-easy" type="button" role="tab" aria-controls="pills-easy" aria-selected="false">Easy Sharing</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-simple" role="tabpanel" aria-labelledby="pills-simple-tab">
+                            <div class="row my-4">
+                                <div class="col-sm-6">
+                                    <img src="img/illustration-features-tab-1.svg" class="img-fluid" alt="landing image">
+                                </div>
+                                <div class="col-sm-6 mt-5">
+                                    <h3>Bookmark in one click</h3><br/>
+                                    <p class="text">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sales.</p>
+                                    <p><a href="#" class="btn btn-primary btn-sm">More info</a></p><br/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-speedy" role="tabpanel" aria-labelledby="pills-speedy-tab">
+                            <div class="row my-4">
+                                <div class="col-sm-6">
+                                    <img src="img/illustration-features-tab-2.svg" class="img-fluid" alt="landing image">
+                                </div>
+                                <div class="col-sm-6 mt-5">
+                                    <h3>Intelligent search</h3><br/>
+                                    <p class="text">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+                                    <p><a href="#" class="btn btn-primary btn-sm">More info</a></p><br/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-easy" role="tabpanel" aria-labelledby="pills-easy-tab">
+                            <div class="row my-4">
+                                <div class="col-sm-6">
+                                    <img src="img/illustration-features-tab-3.svg" class="img-fluid" alt="landing image">
+                                </div>
+                                <div class="col-sm-6 mt-5">
+                                    <h3>Share your bookmarks</h3><br/>
+                                    <p class="text">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
+                                    <p><a href="#" class="btn btn-primary btn-sm">More info</a></p><br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </header>
         <div class="container pt-5 my-2">
             <div class="row">
                 <div class="col-lg-6 col-md-8 mx-auto">
@@ -99,7 +126,7 @@
         </div>
         <div class="container-sm w-50">
             <div class="row cards">
-                <div class="col align-self-start">
+                <div class="col-sm-4 align-self-start">
                     <div class="card">
                         <img src="img/logo-chrome.svg" class="card-img-top mt-4" alt="responsive">
                         <div class="card-body">
@@ -110,7 +137,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col align-self-center">
+                <div class="col-sm-4 align-self-center">
                     <div class="card">
                         <img src="img/logo-firefox.svg" class="card-img-top mt-4" alt="responsive">
                         <div class="card-body">
@@ -121,7 +148,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col align-self-end">
+                <div class="col-sm-4 align-self-end">
                     <div class="card">
                         <img src="img/logo-opera.svg" class="card-img-top mt-4" alt="responsive">
                         <div class="card-body">
@@ -151,7 +178,7 @@
                         </button>
                     </h4>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#bookmark-accordion">
-                        <div class="accordion-body"></div>
+                        <div class="accordion-body">Vivamus luctus eros aliquet convallis utricies. Mauris auge massa, utrices non ligula. Suspendisse imperdiet.</div>
                     </div>
                 </div>
                 <div class="accordion-item">
@@ -171,7 +198,7 @@
                         </button>
                     </h4>
                     <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#bookmark-accordion">
-                        <div class="accordion-body"></div>
+                        <div class="accordion-body">Vivamus luctus eros aliquet convallis utricies. Mauris auge massa, utrices non ligula. Suspendisse imperdiet.</div>
                     </div>
                 </div>
                 <div class="accordion-item">
@@ -181,7 +208,7 @@
                         </button>
                     </h4>
                     <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#bookmark-accordion">
-                        <div class="accordion-body"></div>
+                        <div class="accordion-body">Vivamus luctus eros aliquet convallis utricies. Mauris auge massa, utrices non ligula. Suspendisse imperdiet.</div>
                     </div>
                 </div>
                 <p><a href="#" class="btn btn-primary btn-sm my-4">More info</a></p>
@@ -189,30 +216,51 @@
         </div>
         <div class="container-fluid blue pt-5">
             <div class="row justify-content-center">
-                <div class="col-3">
-                    <div class="contact-text">
-                        <h6>35.000+ ALREADY JOINED<br/></h6>
-                        <p><b>Stay up-yo-date with what we're doing</b></p>
+                <div class="col-4">
+                    <div class="contact-text-first">
+                        <p>35.000+ ALREADY JOINED</p>
                     </div>
-                    <div class="mb-3">
-                        <label for="FormControlInput1" class="form-label"></label>
-                        <input type="email" class="form-control-sm" id="FormControlInput1" placeholder="name@example.com">
-                        <p><a href="#" class="btn btn-secondary btn-sm text-white my-4">Contact Us</a></p>
+                    <div class="contact-text-second">
+                        <p><b>Stay up-to-date with what we're doing</b></p>
                     </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-5 form-group">
+                    <form class="needs-validation" action="#success" novalidate>
+                        <input type="email" class="form-control" id="validationEmail" required>
+                        <div class="invalid-feedback">
+                            Whoops, make sure it's an email
+                        </div>
+                        <button class="btn btn-secondary btn-sm text-white my-4" type="submit">Contact Us</button>
+                    </form>
                 </div>
             </div>
         </div>
-        <footer class="container-fluid dark-blue">
-            <div class="row justify-content-center">
-                <div class="col-3">
-                    <ul>
-                        <li><a href="https://es-es.facebook.com/"><i class="fa-brands fa-facebook-square"></i></a></li>
-                        <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </footer>   
-    </header>
+    <footer class="container-fluid dark-blue pt-2 pb-2">
+    </footer>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+            })
+        })()
+    </script>
 </body>
 </html>

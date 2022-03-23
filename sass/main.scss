@@ -98,10 +98,24 @@ $navbar-light-hover-color: $secondary;
 .blue {
     background-color: $primary;
 }
-.contact-text {
-    color: white;
-    font-size: 12px;
-    letter-spacing: 0.5px;
+.contact-text-first {
+    color: #ffffff;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+.contact-text-second {
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+}
+.invalid-feedback {
+    color: #ffffff !important;
+    font-size: 10px !important;
+    font-style: italic;
+    border-radius: 2px;
+    padding: 4px;
+    background-color: $secondary;
 }
 // Variables and Values: Footer
 .dark-blue {
